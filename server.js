@@ -19,7 +19,7 @@ app.post('/captcha', function(req, res) {
   {
     return res.json({"responseError" : "Please select captcha first"});
   }
-  const secretKey = "6LfXpywUAAAAABGPmLibCr8xBk-P5RBJrmqXYJwU";
+  const secretKey = "xxxx";
 
   const verificationURL = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
 
