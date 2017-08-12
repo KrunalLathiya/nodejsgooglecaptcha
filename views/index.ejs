@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Google Recaptcha Tutorial</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container"><br />
+      <h1>Google Recaptcha Tutorial</h1><br />
+      <form id="myForm" method="post" action="/captcha">
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" name="name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+              <div class="g-recaptcha" data-sitekey="6LfXpywUAAAAAOt7CugMNzPQ-sQbltyx3FdvgD4z"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+            <button type="submit" class="btn btn-success" style="margin-left:38px">Send</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  </body>
+</html>
